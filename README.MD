@@ -15,7 +15,8 @@ The code which uses a promise should call then function on that promise. It take
 What happens if you try to access the value from promise before it is resolved or rejected. Then promise will be in the pending state.
 
 # Creating a Promise
-In NodeJs, a Promise i created using the new constructor. the syntax is as below:
+In NodeJs, a Promise i created using the new constructor. the syntax is as below.
+    
     var myPromise = new Promise(function(resolve, reject){
     ....
     })
@@ -32,5 +33,5 @@ If you make an HTTP GET request for this URL, you will be returned a JSON with a
 For making an HTTP request from our Node app, let us install a small package which make things clear.
 
     sudo npm install request -g
-    
+
 request package removes the boilerplate code of inbuilt http package.
