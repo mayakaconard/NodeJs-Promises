@@ -7,8 +7,30 @@ In simple words “A promise is a word taken for some action, the other party wh
 
 As the picture depicts, these are the steps for creating and using promises
 
-    A promise can be created in our JavaScript code. Or else it can be returned from an external node package
-    Any promise that performs async operations should call any one of the two methods resolve or reject. The code logic should take care of when and where to call these functions. If the operation is successful, pass that data to the code that uses that promise, otherwise pass error
-    The code which uses a promise should call then function on that promise. It takes two anonymous functions as parameters. The first function executes if the promise is resolved and the second function executes if promise is rejected.
+A promise can be created in our JavaScript code. Or else it can be returned from an external node package
+Any promise that performs async operations should call any one of the two methods resolve or reject. 
+The code logic should take care of when and where to call these functions. If the operation is successful, pass that data to the code that uses that promise, otherwise pass error
+The code which uses a promise should call then function on that promise. It takes two anonymous functions as parameters. The first function executes if the promise is resolved and the second function executes if promise is rejected.
 
-    What happens if you try to access the value from promise before it is resolved or rejected. Then promise will be in the pending state.
+What happens if you try to access the value from promise before it is resolved or rejected. Then promise will be in the pending state.
+
+# Creating a Promise
+In NodeJs, a Promise i created using the new constructor. the syntax is as below:
+    var myPromise = new Promise(function(resolve, reject){
+    ....
+    })
+
+myPromise is a Promise type object which allows us to use it for later.
+
+In my Case, I consumed Github API which is a REST API by provided by Github to fetch the details about Users, Repositories etc.
+I used the users API with the link below:
+
+    https://api.github.com/users/mayakaconard
+
+If you make an HTTP GET request for this URL, you will be returned a JSON with all stats about myself like repos, followers, following, stars etc.
+
+For making an HTTP request from our Node app, let us install a small package which make things clear.
+
+    sudo npm install request -g
+    
+request package removes the boilerplate code of inbuilt http package.
