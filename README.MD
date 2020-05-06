@@ -36,7 +36,8 @@ For making an HTTP request from our Node app, let us install a small package whi
 
 request package removes the boilerplate code of inbuilt http package.
 
-    ```node
+    
+
     var request = require("request");
 
     var userDetails;
@@ -92,4 +93,4 @@ request package removes the boilerplate code of inbuilt http package.
     }
 
     main();
-    ```
+    
