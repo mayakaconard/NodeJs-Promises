@@ -28,10 +28,10 @@ function getData (url)
     })
 }
 
-var errHandler = function (err)
-{
-    console.log(err);
-}
+                                                                                                                                                                            var errHandler = function (err)
+                                                                                                                                                                            {
+                                                                                                                                                                                console.log(err);
+                                                                                                                                                                            }
 
 function main ()
 {
