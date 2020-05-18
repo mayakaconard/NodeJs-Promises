@@ -9,6 +9,12 @@
   "author": "Conardson",
   "license": "ISC",
   "dependencies": {
+    "epress": "0.0.1-security",
+    "express": "^4.17.1",
+    "handlebars": "^4.7.6",
+    "pdf-creator-node": "^1.4.1",
+    "pdfkit": "^0.11.0",
+    "puppeteer": "^3.0.4",
     "randomstring": "^1.1.5",
     "request": "^2.88.2"
   }
