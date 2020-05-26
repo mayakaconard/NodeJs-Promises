@@ -3,6 +3,10 @@ const path = require("path");
 var pdf = require("pdf-creator-node");
 var html = fs.readFileSync('template.html', 'utf8');
 var current_date = new Date().toISOString().slice(0, 19);
+
+let imgSrc = 'file://' + __dirname + '/assets/logo.png';
+imgSrc = path.normalize(imgSrc);  //Make sure you import part.
+
 var options = {
     format: "A4",
     orientation: "portrait",
