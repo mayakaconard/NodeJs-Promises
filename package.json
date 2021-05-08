@@ -11,7 +11,7 @@
   "dependencies": {
     "epress": "0.0.1-security",
     "express": "^4.17.1",
-    "handlebars": "^4.7.6",
+    "handlebars": "^4.7.7",
     "pdf-creator-node": "^1.4.1",
     "pdfkit": "^0.11.0",
     "puppeteer": "^3.0.4",
