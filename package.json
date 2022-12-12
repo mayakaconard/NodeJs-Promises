@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "epress": "0.0.1-security",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "handlebars": "^4.7.6",
     "pdf-creator-node": "^1.4.1",
     "pdfkit": "^0.11.0",
